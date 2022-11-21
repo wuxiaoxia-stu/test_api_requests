@@ -1,0 +1,41 @@
+#filename: user_api.yaml
+
+login:
+  name: login
+  method: POST
+  url: /api/user/login
+  payload:
+      user_id: 1
+      password: c86038fe04bc7097e218b4fd6b767f4b
+      author_number: C_22060015
+  headers:
+      Content-Type: application/json
+  validate: token
+
+refresh_token:
+  name: refresh_token
+  method: POST
+  url: /api/user/refresh-token
+  payload: {}
+  headers:
+    Authorization:
+  validate: token
+
+logout:
+  name: logout
+  method: POST
+  url: /api/user/logout
+  payload: {}
+  headers:
+    Authorization:
+  validate: ok
+
+save:
+  name: save
+  method: POST
+  url: /api/user/save
+  payload:
+    user_data: W3siZGVsZXRlX2F0IjowLCJwYXNzd29yZCI6ImM4NjAzOGZlMDRiYzcwOTdlMjE4YjRmZDZiNzY3ZjRiIiwicm9sZV9uYW1lIjoi566h55CG5ZGYIiwicm9sZV90eXBlIjowLCJ1cGRhdGVfYXQiOjE2NjAyNzI5MTcsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4ifSx7ImRlbGV0ZV9hdCI6MCwicGFzc3dvcmQiOiJjODYwMzhmZTA0YmM3MDk3ZTIxOGI0ZmQ2Yjc2N2Y0YiIsInJvbGVfbmFtZSI6IuaZrumAmueUqOaItyIsInJvbGVfdHlwZSI6MSwidXBkYXRlX2F0IjoxNjYwMjcyOTE3LCJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InVzZXIifV0=
+  headers:
+    Authorization:
+  validate: ok
