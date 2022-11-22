@@ -1,6 +1,0 @@
-INFO     testcases.test_pair_api:test_pair_api.py:30 查询配对状态
-DEBUG    urllib3.util.retry:retry.py:351 Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=None, status=None)
-DEBUG    urllib3.util.retry:retry.py:351 Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=None, status=None)
-DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 127.0.0.1:9006
-DEBUG    urllib3.connectionpool:connectionpool.py:456 http://127.0.0.1:9006 "GET /api/pair/status/?author_number=C_22080004 HTTP/1.1" 200 117
-INFO     testcases.test_pair_api:test_pair_api.py:32 {'code': 0, 'data': {'pair_time': '2022-11-15 11:17:28', 'server_author_number': 'S_22060019', 'state': 1}, 'msg': '已配对'}
