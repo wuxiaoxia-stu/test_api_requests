@@ -1,0 +1,8 @@
+-
+  method: get
+  url: http://127.0.0.1:8007/api/lv1/leader/exists/
+  headers:
+          Content-Type: application/json
+          author-number: 21120001_C
+  payload:
+  validate: 200
