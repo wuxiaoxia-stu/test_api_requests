@@ -1,0 +1,12 @@
+# fileName: case_api.yml
+
+get_check_options:
+  name: get_check_options
+  method: GET
+  url: /api/check/options?type=1
+  payload: {}
+  headers:
+    Authorization:
+  validate:
+    code: 0
+
